@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!--
+         1.- Nav con div.cabecera, ul.navbar, li.navitems*4 y etiquetas a
+         Comando utilizado: nav>div.cabecera>ul.navbar>li.navitems*4>a
+        -->
+
+    <nav>
+        <div class="cabecera">
+            <ul class="navbar">
+                <li class="navitems"><a href=""></a></li>
+                <li class="navitems"><a href=""></a></li>
+                <li class="navitems"><a href=""></a></li>
+                <li class="navitems"><a href=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <!--
+         2.- <main> con 3 div.card; dentro de cada uno img.imgcard (src="img/imagen$.jpg" alt="Imagen $") y un h3
+         Uso de iterador $ dentro del grupo multiplicado
+         Comando utilizado: main>(div.card>img.imgcard[src="img/imagen$.jpg" alt="Imagen $"]+h3)*3
+        -->
+
+    <main>
+        <div class="card">
+            <img src="img/imagen1.jpg" alt="Imagen 1" class="imgcard">
+            <h3></h3>
+        </div>
+        <div class="card">
+            <img src="img/imagen2.jpg" alt="Imagen 2" class="imgcard">
+            <h3></h3>
+        </div>
+        <div class="card">
+            <img src="img/imagen3.jpg" alt="Imagen 3" class="imgcard">
+            <h3></h3>
+        </div>
+    </main>
+
+        <!--
+         3.- <section> con div.seccion1 y lista de definición (<dl>) con 5 pares término/definición (<dt> + <dd>)
+         Comando utilizado: section>div.seccion1>dl>(dt{Término $}+dd{Definición $})*5
+        -->
+
+    <section>
+        <div class="seccion1">
+            <dl>
+                <dt>Término 1</dt>
+                <dd>Definición 1</dd>
+                <dt>Término 2</dt>
+                <dd>Definición 2</dd>
+                <dt>Término 3</dt>
+                <dd>Definición 3</dd>
+                <dt>Término 4</dt>
+                <dd>Definición 4</dd>
+                <dt>Término 5</dt>
+                <dd>Definición 5</dd>
+            </dl>
+        </div>
+    </section>
+
+        <!--
+         4.- <section.seccion2> con 6 imágenes pertenecientes a la clase gallery
+         Comando utilizado: section.seccion2>img.gallery*6
+        -->
+
+    <section class="seccion2">
+        <img src="" alt="" class="gallery">
+        <img src="" alt="" class="gallery">
+        <img src="" alt="" class="gallery">
+        <img src="" alt="" class="gallery">
+        <img src="" alt="" class="gallery">
+        <img src="" alt="" class="gallery">
+    </section>
+
+        <!--
+         5.- <footer> con div.pie + section.social (con 3 img) + address (con 3 párrafos)
+         Comando utilizado: footer>div.pie+section.social>img*3^address>p*3
+        -->
+         
+    <footer>
+        <div class="pie"></div>
+        <section class="social">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+        <address>
+            <p></p>
+            <p></p>
+            <p></p>
+        </address>
+    </footer>
+    
+</body>
+</html>

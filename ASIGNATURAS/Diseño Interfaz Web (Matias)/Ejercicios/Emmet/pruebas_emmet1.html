@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- 
+        1.- Lista ordenada de 7 li en una lista ordenada.
+        Comando utilizado: ol>li*7
+        -->
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+        <!--
+        2.-  Tabla de 6 filas y 8 columnas
+        Comando utilizado: table>tr*6>td*8
+        -->
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+        <!--
+         3.- Lista no ordenada de 10 elementos (clases elemlist1 a elemlist10)
+         Uso del operador $ 
+         Comando utilizado: ul>li.elemlist$*10
+        -->
+
+    <ul>
+        <li class="elemlist1"></li>
+        <li class="elemlist2"></li>
+        <li class="elemlist3"></li>
+        <li class="elemlist4"></li>
+        <li class="elemlist5"></li>
+        <li class="elemlist6"></li>
+        <li class="elemlist7"></li>
+        <li class="elemlist8"></li>
+        <li class="elemlist9"></li>
+        <li class="elemlist10"></li>
+    </ul>
+
+        <!--
+         4.- Enlace a Google con texto "Pinche aquí" y div hermano con dos h1 (.titulares1 y .titulares2)
+         Uso del operador de nivel superior ^ o agrupación ()
+         Comando utilizado: a[href="https://www.google.com"]{Pinche aquí}+div>h1.titulares1+h1.titulares2
+        -->
+
+    <a href="https://www.google.com">Pinche aquí</a>
+    <div>
+        <h1 class="titulares1"></h1>
+        <h1 class="titulares2"></h1>
+    </div>
+
+        <!--
+         5.-  Formulario POST (action="procesar.php") con 3 campos de texto, submit y reset,
+         cada uno con su label vinculado mediante 'for' e 'id'.
+         Uso de agrupación () y multiplicador de iteración $*3 (BUSCADO EN GEMINIS)
+         Comando utilizado: form[method="post" action="procesar.php"]>((label[for="campo$"]{Campo $}+input[type="text" id="campo$" name="campo$"])*3+(label[for="enviar"]{Enviar}+input[type="submit" id="enviar"])+(label[for="resetear"]{Restablecer}+input[type="reset" id="resetear"]))
+        -->
+
+    <form method="post" action="procesar.php">
+        <label for="campo1">Campo 1</label>
+        <input type="text" id="campo1" name="campo1">
+        <label for="campo2">Campo 2</label>
+        <input type="text" id="campo2" name="campo2">
+        <label for="campo3">Campo 3</label>
+        <input type="text" id="campo3" name="campo3">
+        <label for="enviar">Enviar</label>
+        <input type="submit" id="enviar">
+        <label for="resetear">Restablecer</label>
+        <input type="reset" id="resetear">
+    </form>
+
+</body>
+</html>
