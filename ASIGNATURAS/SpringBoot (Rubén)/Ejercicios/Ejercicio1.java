@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class Ejercicio1 { 
 
+    // Ejercicio A:
+
     public static void cadenasRecibidas (String stri1, String stri2) {
 
         String out1 = "";
