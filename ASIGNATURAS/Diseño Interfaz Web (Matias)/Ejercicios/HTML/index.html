@@ -1,125 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda Muebles</title>
+
+    <style>
+        .header span {
+            color: rgb(35, 144, 144);
+        }
+
+        .categories__grid {
+            display: grid;
+            grid-template: "a a a";
+            gap: 30px;
+        }
+
+        .categories__grid--about {
+
+            display: grid;
+            grid-template: "a a";
+            gap: 20px
+        }
+        .productos__grid {
+
+            display: grid;
+            grid-template: "a a a a a a"
+                           "b b b c c c"
+                           "d d e e f f";
+            gap: 10px;
+        }
+        .footer__container {
+
+            display:grid;
+            grid-template: "a a a";
+            gap: 10px;
+        }
+        
+    </style>
 </head>
-<style>
-
-.mueble {
-
-    color: rgb(81, 175, 175);
-
-};
-
-</style>
 <body>
 
-    <!-- Cabecera -->
-
-    <header>
-
-        <h1 class="cabecera">Tienda <span class="mueble">Muebles</span></h1>
-
-        <!-- Barra de navegacion -->
-         <nav>
-
-            <ul>
-                <li class="navitem"><a href="#">Inicio</a></li>
-                <li class="navitem"><a href="#">Nosotros</a></li>
-                <li class="navitem"><a href="#">Tienda</a></li>
-                <li class="navitem"><a href="#">Blog</a></li>
-                <li class="navitem"><a href="#">Galeria</a></li>
-                <li class="navitem"><a href="#">Contacto</a></li>
-            </ul>
-
-
-         </nav>
-
+    <!-- CABECERA -->
+    <header class="header">
+        <h1>Tienda <span>Muebles</span></h1>
     </header>
 
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <ul>
+            <li class="navbaritem"><a href="#">Inicio</a></li>
+            <li class="navbaritem"><a href="#">Nosotros</a></li>
+            <li class="navbaritem"><a href="#">Tienda</a></li>
+            <li class="navbaritem"><a href="#">Blog</a></li>
+            <li class="navbaritem"><a href="#">Galería</a></li>
+            <li class="navbaritem"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
-
-    <!-- Hero -->
-
+    <!-- HERO -->
     <section class="hero">
-
-        <img src="img/principal.jpg" alt="Imagen Salon">
-
+        <img src="img/principal.jpg" alt="Imagen principal">
     </section>
 
+    <!-- CATEGORIAS -->
+    <section class="categories">
+        <h2>Categorias de productos</h2>
 
-    <!-- Main -->
+        <div class="categories__grid">
+            <a href="#">
+                <div class="categories__category">
+                    <img src="img/categoria1.jpg" alt="oficina" class="categories__img">
+                    <h4 class="categories__name">Oficina</h4>
+                </div>
+            </a>
 
+            <a href="#">
+                <div class="categories__category">
+                    <img src="img/categoria2.jpg" alt="hogar" class="categories__img">
+                    <h4 class="categories__name">Hogar</h4>
+                </div>
+            </a>
 
+            <a href="#">
+                <div class="categories__category">
+                    <img src="img/categoria3.jpg" alt="cocina" class="categories__img">
+                    <h4 class="categories__name">Cocina</h4>
+                </div>
+            </a>
+        </div>
+    </section>
 
-    <!-- Categorias -->
-     <section>
-
-        <h2>
-            Categorias de productos.
-        </h2>
-
-        <!-- Categoria oficina -->
-        
-        <a href="#">
-
-            <!-- Uso de la metodologia BEM CSS -->
-
-            <div class="categories__category">
-                <img src="img/categoria1.jpg" alt="Oficina" class="categories__img">
-                <h4 class="categories__name">Oficina</h4>
-            </div>
-
-        </a>
-        <a href="#">
-
-            <!-- Uso de la metodologia BEM CSS -->
-
-            <div class="categories__category">
-                <img src="img/categoria2.jpg" alt="Hogar" class="categories__img">
-                <h4 class="categories__name">Hogar</h4>
-            </div>
-
-        </a>
-        <a href="#">
-
-            <!-- Uso de la metodologia BEM CSS -->
-
-            <div class="categories__category">
-                <img src="img/categoria3.jpg" alt="Cocina" class="categories__img">
-                <h4 class="categories__name">Cocina</h4>
-            </div>
-
-        </a>
-        
-     </section>
-
-    <!-- Sobre nosotros -->
-
-
+    <!-- SOBRE NOSOTROS -->
     <section class="about">
-
-        <div class="about__img">
-            <img src="img/nosotros.jpg">
+        <div class="categories__grid--about">
+            <div class="about__img">
+                <img src="img/nosotros.jpg" alt="sofa">
+            </div>
+            <div class="about__text">
+                <h2 class="about__title">Sobre nosotros</h2>
+                <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat rem reiciendis impedit! Distinctio, neque ipsam eum assumenda praesentium similique a consectetur, ratione molestiae eveniet, explicabo facilis omnis laboriosam reiciendis molestias.</p>
+            </div>
         </div>
-        <div class="about__text">
-            <h2>Sobre nosotros</h2>
-        </div>
-
-
     </section>
 
+    <!-- PRODUCTOS -->
+    <section class="products">
+        <div class="productos__grid">
+            <!-- Producto 1 -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 1</h2>
+                    <img src="img/producto1.jpg" alt="Producto 1" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
+            <!-- Producto 2 -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 2</h2>
+                    <img src="img/producto2.jpg" alt="Producto 2" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
-    <!-- Productos -->
+            <!-- Producto 3 -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 3</h2>
+                    <img src="img/producto3.jpg" alt="Producto 3" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
+            <!-- Producto 4 -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 4</h2>
+                    <img src="img/producto4.jpg" alt="Producto 4" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
+            <!-- Producto 5 -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 5</h2>
+                    <img src="img/producto5.jpg" alt="Producto 5" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
+            <!-- Producto 6  -->
+            <article>
+                <div class="products__item">
+                    <h2 class="products__title">Producto 6</h2>
+                    <img src="img/producto6.jpg" alt="Producto 6" class="products__img">
+                    <p class="products__text">Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="products__price"><strong>10000€</strong></p>
+                    <button class="products__button">AGREGAR AL CARRITO</button>
+                </div>
+            </article>
 
-    <!-- Footer -->
+        </div>
+    </section>
 
-    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h2>Categorías</h2>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardín</a>
+                <a href="#">Cochera</a>
+                <a href="#">Dormitorios</a>
+            </div>
+
+            <div class="footer__section">
+                <h2>Sobre Nosotros</h2>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Misión, Visión y Valores</a>
+                <a href="#">Carreras</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos del Servicio</a>
+            </div>
+
+            <div class="footer__section">
+                <h2>Soporte</h2>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Ayuda en línea</a>
+                <a href="#">Confianza y Seguridad</a>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p> &copy; Todos los derechos Reservados, TiendaMuebles</p>
+        </div>
+    </footer>
+
 </body>
 </html>
