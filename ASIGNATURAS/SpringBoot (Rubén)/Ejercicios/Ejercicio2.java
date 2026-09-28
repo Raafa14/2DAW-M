@@ -19,7 +19,7 @@
 
             for (int i = 0; i < matriz.length; i++) {
 
-                for (int j = 0; j < matriz.length; j++) {
+                for (int j = 0; j < matriz[i].length; j++) {
 
                     int numRandom = (int)(Math.random()*11);
 
@@ -33,7 +33,7 @@
 
                 System.out.println();
 
-                for (int j = 0; j < matriz.length; j++) {
+                for (int j = 0; j < matriz[i].length; j++) {
 
                     if (matriz[i][j] > 9) {
 
@@ -53,16 +53,105 @@
 
         };
 
+
+        public static void matrizOriginal(){
+
+            Scanner sc =  new Scanner(System.in);
+
+            System.out.println("Escriba un tamaño: ");
+            int longi = sc.nextInt();
+
+            int[][] matriz1 = new int[longi][longi];
+            int[][] matriz2 = new int[longi][longi];
+            int[][] matrizAux = new int[longi][longi];
+            int valor;
+            
+            // Matriz 1
+            for (int i = 0; i < matriz1.length; i++){
+
+                for (int j = 0; j < matriz1[i].length; j++) {
+
+                    System.out.println("Escriba el valor para la fila "+i+" y columna "+j+" de la matriz 1: ");
+                    valor = sc.nextInt();
+
+                    matriz1[i][j] = valor;
+
+                }
+
+            }
+            // Matriz 2
+            for (int i = 0; i < matriz2.length; i++){
+
+                for (int j = 0; j < matriz2[i].length; j++) {
+
+                    System.out.println("Escriba el valor para la fila "+i+" y columna "+j+" de la matriz 2: ");
+                    valor = sc.nextInt();
+
+                    matriz2[i][j] = valor;
+
+                }
+
+            }
+
+            //Mostrar matriz 1
+
+            System.out.print("Matriz 1:");
+            for (int i = 0; i < matriz1.length; i++){
+
+                System.out.println();
+
+                for (int j = 0; j < matriz1[i].length; j++) {
+
+                    System.out.print(matriz1[i][j]+ " | ");
+
+                }
+
+            }
+            System.out.println("");
+            System.out.print("Matriz 2:");
+            for (int i = 0; i < matriz2.length; i++){
+
+                System.out.println();
+
+                for (int j = 0; j < matriz2[i].length; j++) {
+
+                    System.out.print(matriz2[i][j]+ " | ");
+
+                }
+
+            }
+            System.out.println();
+            System.out.println("Matriz resultado: ");
+            for (int i = 0; i < matrizAux.length; i++){
+
+                System.out.println("");
+
+                for (int j = 0; j < matrizAux[i].length; j++) {
+
+                    matrizAux[i][j] = matriz1[i][j] + matriz2[i][j];
+
+                    System.out.print(matrizAux[i][j]+" | ");
+
+                }
+
+            }
+
+
+
+        }
+
         // MAIN
         public static void main(String[] args) {
 
-            Scanner sc = new Scanner(System.in);
-            int colum;
+            // Scanner sc = new Scanner(System.in);
+            // int colum;
             
-            System.out.println("Cuantas columnas quieres añadir?");
-            colum = sc.nextInt();
+            // System.out.println("Cuantas columnas quieres añadir?");
+            // colum = sc.nextInt();
 
-            numRandom(colum);
+            // numRandom(colum);
+
+            matrizOriginal();
 
         }
 
