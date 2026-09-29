@@ -54,6 +54,14 @@
         };
 
 
+
+
+
+        // Ejercicio b) Crea 2 matrices de mxm y suma sus valores. Los resultados deben almacenarse
+        // en otra matriz distinta. Los valores y la longitud, seran elegidos por el usuario. Finalmente,
+        // muestra por pantalla las matrices originales y el resultado, para ello debes crear una función
+        // auxiliar que muestre las matrices y se haga la llamada desde la clase Main.
+
         public static void matrizOriginal(){
 
             Scanner sc =  new Scanner(System.in);
@@ -140,6 +148,85 @@
 
         }
 
+        // Ejercicio c) Crea una matriz “marco” de tamaño 8x6: todos sus elementos deben ser 0 salvo
+        // los de los bordes que deben ser 1. Muestra el resultado.
+
+
+        public static void mostrarCuadro(){
+            Scanner sc = new Scanner(System.in);
+
+            int bordes = 1; 
+
+            System.out.println("Cuantas filas quieres que tenga el cuadro?: ");
+            int filas = sc.nextInt();
+
+            System.out.println("Cuantas columnas quieres que tenga el cuadro?: ");
+            int col = sc.nextInt();
+
+            int[][]matriz = new int [filas][col];
+
+            for (int i = 0; i < matriz.length; i++) {
+
+                for (int j = 0; j < matriz[i].length; j++) {
+
+                    matriz[0][j] = bordes;
+                    matriz[i][0] = bordes;
+                    matriz[filas - 1][j] = bordes;
+                    matriz[i][col - 1] = bordes;
+
+                }
+
+            }
+
+            for (int i = 0; i < matriz.length; i++) {
+
+                System.out.println();
+
+                for (int j = 0; j < matriz[i].length; j++) {
+                    System.out.print("| ");
+
+                    System.out.print(matriz[i][j]+ " ");
+
+                }
+
+                System.out.print("|");
+
+            }
+
+        }
+
+        // Ejercicio d) Tabla de 1 dimensión: Pide 5 números que se introducirán ordenados de forma
+        // creciente. Éstos se guardan en una tabla de tamaño 10. A continuación se pide un número N,
+        // el cual debe insertarse en el lugar adecuado para que la tabla continúe ordenada.
+
+
+        public static void tablaOrdenada(){
+
+            Scanner sc = new Scanner(System.in);
+            int[] tabla = new int[10];
+
+            System.out.println("Introduce 5 numeros para guardarlos");
+            for (int i = 0; i < tabla.length - 5; i++) {
+                
+
+                System.out.println("Numero "+ (i+1) + ": ");
+                int nums = sc.nextInt();
+
+                tabla[i] = nums;
+
+            }
+
+            System.out.println();
+
+            System.out.println("Numeros guardados: ");
+            for (int i = 0; i < tabla.length; i++) {
+
+                System.out.println(tabla[i]);
+
+            }
+
+        }
+
         // MAIN
         public static void main(String[] args) {
 
@@ -151,7 +238,11 @@
 
             // numRandom(colum);
 
-            matrizOriginal();
+            // matrizOriginal();
+
+            //mostrarCuadro();
+
+            tablaOrdenada();
 
         }
 
