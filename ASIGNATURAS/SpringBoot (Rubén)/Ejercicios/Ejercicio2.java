@@ -1,5 +1,6 @@
    import java.util.Scanner;
    import java.util.Random;
+   import java.util.Arrays;
 
    public class Ejercicio2 {
 
@@ -200,31 +201,41 @@
         // el cual debe insertarse en el lugar adecuado para que la tabla continúe ordenada.
 
 
-        public static void tablaOrdenada(){
-
+        public static void tablaOrdenada() {
             Scanner sc = new Scanner(System.in);
             int[] tabla = new int[10];
 
-            System.out.println("Introduce 5 numeros para guardarlos");
-            for (int i = 0; i < tabla.length - 5; i++) {
-                
-
-                System.out.println("Numero "+ (i+1) + ": ");
-                int nums = sc.nextInt();
-
-                tabla[i] = nums;
-
+            // 1. Pedir los 5 primeros números (vienen ordenados de menor a mayor)
+            System.out.println("Introduce 5 números de forma creciente:");
+            for (int i = 0; i < 5; i++) {
+                System.out.print("Número " + (i + 1) + ": ");
+                tabla[i] = sc.nextInt();
             }
 
+            // 2. Pedir el nuevo número N a insertar (una sola vez)
+            System.out.print("\nIntroduce un nuevo número (N) a insertar: ");
+            int newNum = sc.nextInt();
+
+            // 3. Buscar la posición (índice) donde debe encajar el número
+            int sitio = 0;
+            while (sitio < 5 && tabla[sitio] < newNum) {
+                sitio++;
+            }
+
+            // 4. Desplazar los elementos hacia la derecha para abrir hueco
+            for (int i = 4; i >= sitio; i--) {
+                tabla[i + 1] = tabla[i];
+            }
+
+            // 5. Insertar el número en el hueco que hemos liberado
+            tabla[sitio] = newNum;
+
+            // 6. Mostrar el resultado (ahora hay 6 números en la tabla)
+            System.out.println("\nTabla resultante tras la inserción:");
+            for (int i = 0; i < 6; i++) {
+                System.out.print(tabla[i] + " ");
+            }
             System.out.println();
-
-            System.out.println("Numeros guardados: ");
-            for (int i = 0; i < tabla.length; i++) {
-
-                System.out.println(tabla[i]);
-
-            }
-
         }
 
         // MAIN
