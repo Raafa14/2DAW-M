@@ -1,6 +1,4 @@
    import java.util.Scanner;
-   import java.util.Random;
-   import java.util.Arrays;
 
    public class Ejercicio2 {
 
@@ -12,11 +10,7 @@
 
         public static int[][] numRandom(int valor) {
 
-            Random rn = new Random();
-
             int matriz[][] = new int[5][valor];
-            int matrizAuxiliar[][];
-            
 
             for (int i = 0; i < matriz.length; i++) {
 
@@ -53,9 +47,6 @@
             return matriz;
 
         };
-
-
-
 
 
         // Ejercicio b) Crea 2 matrices de mxm y suma sus valores. Los resultados deben almacenarse
@@ -241,19 +232,17 @@
         // MAIN
         public static void main(String[] args) {
 
-            // Scanner sc = new Scanner(System.in);
-            // int colum;
+            Scanner sc = new Scanner(System.in);
             
             // System.out.println("Cuantas columnas quieres añadir?");
-            // colum = sc.nextInt();
-
+            // int colum = sc.nextInt();
             // numRandom(colum);
 
             // matrizOriginal();
 
-            //mostrarCuadro();
+            mostrarCuadro();
 
-            tablaOrdenada();
+            // tablaOrdenada();
 
         }
 
