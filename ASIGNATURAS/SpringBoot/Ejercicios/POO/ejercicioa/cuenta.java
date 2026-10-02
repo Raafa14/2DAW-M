@@ -4,7 +4,8 @@ public class cuenta {
     private String titular;
     private double cantidad;
 
-    // Constructor 1: Solo con el titular obligatorio (la cantidad se inicializa a 0 por defecto)
+    // Constructor 1: Solo con el titular obligatorio (la cantidad se inicializa a 0
+    // por defecto)
     public cuenta(String titular) {
         this.titular = titular;
         this.cantidad = 0.0;
