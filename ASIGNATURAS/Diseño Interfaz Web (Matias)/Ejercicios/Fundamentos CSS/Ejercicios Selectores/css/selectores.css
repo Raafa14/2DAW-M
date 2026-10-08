@@ -41,10 +41,7 @@ section>p{
     font-size: 24px;
 }
 /* 5.- Todos los titulares <h1> que están dentro de <header> y los <h2> dentro de <main> estarán centrados */
-header h1 {
-    text-align: center;
-}
-main h2 {
+header h1, main h2{
     text-align: center;
 }
 /* 6.- Pon un borde de 2px punteado de color negro solo al <section> que aparece después de <main> */
@@ -84,9 +81,8 @@ img[alt$=o] {
     border: 5px solid darkorange;
 }
 /* 5.- Establece un borde exterior de 10px azul a las imágenes cuyo texto alternativo contenga la palabra mono */
-img[alt*=mono] {
-
-    border: 10px solid blue;
+img[alt~=mono] {
+    outline: 10px solid blue;
 }
 /* 6.- Los enlaces con destino contacto.html estarán tachados  */
 a[href*="contacto.html"] {

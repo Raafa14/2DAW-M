@@ -1,0 +1,12 @@
+body {
+    background-color: grey;
+    color: black;
+}
+h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    text-indent: 25px;
+}

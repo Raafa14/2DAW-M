@@ -1,0 +1,12 @@
+.parrafos__destacados {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #A2935B;
+}
+.parrafos__estandar {
+    font-size: 1.2rem;
+    color: #9A5E30;
+}
+p, h1, h2 {
+    color: #4C1B2D;    
+}
