@@ -7,7 +7,6 @@ public class Ejercicio04 {
             Scanner sc =  new Scanner(System.in);
             int n;
             int acumulador[] = new int[8];
-            int cociente = 0;
 
             System.out.println("Introduce un valor");
             n = sc.nextInt();
