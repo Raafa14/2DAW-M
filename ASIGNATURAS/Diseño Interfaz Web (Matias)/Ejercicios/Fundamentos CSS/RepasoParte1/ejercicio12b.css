@@ -1,0 +1,25 @@
+body{
+    width: 800px;
+}
+.manifesto {
+    background-color: rgba(20, 20, 20, 0.80);
+    color: white;
+    padding: 20px;
+}
+h3 {
+    text-align: center;
+}
+section {
+    margin: 25px;
+}
+main {
+    background-image: url('html5.png'),
+                      url('css3.png'),
+                      url('js.png');
+
+    background-position: left center,
+                         center center,
+                         right center ;
+
+    background-repeat: no-repeat;
+}

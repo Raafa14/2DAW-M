@@ -1,0 +1,41 @@
+
+/* Estilos generales para el fondo de la página */
+body {
+  /* Fondo RGB (20, 20, 20) como respaldo y fuente personalizada */
+  background-color: rgb(20, 20, 20);
+  font-family: 'Mali', cursive, sans-serif;
+  margin: 0;
+  padding: 20px;
+
+  /* Propiedades de la imagen de fondo */
+  background-image: url('background.png'); /* O '../background.png' si está fuera de la carpeta css */
+  background-repeat: no-repeat;            /* No se repite */
+  background-position: center center;       /* Centrada vertical y horizontalmente */
+  background-attachment: fixed;           /* Se queda fija al hacer scroll */
+  background-size: cover;                  /* Ajusta la imagen para cubrir el fondo */
+}
+
+/* Estilo del título principal */
+header h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Fondo del texto con color RGB (20, 20, 20) y transparencia (rgba) */
+.manifesto {
+  /* 0.85 es el nivel de opacidad/transparencia (puedes ajustarlo entre 0 y 1) */
+  background-color: rgba(20, 20, 20, 0.85); 
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.title {
+  margin-top: 0;
+  color: #00ffcc;
+  border-bottom: 1px solid #00ffcc;
+  padding-bottom: 10px;
+}
