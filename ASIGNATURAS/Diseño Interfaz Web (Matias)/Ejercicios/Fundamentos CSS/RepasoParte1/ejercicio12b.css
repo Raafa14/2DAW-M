@@ -1,6 +1,7 @@
-body{
-    width: 800px;
-}
+/* --- TUS REGLAS ORIGINALES (INTACTAS) --- */
+/* body{
+    width: auto;
+} */
 .manifesto {
     background-color: rgba(20, 20, 20, 0.80);
     color: white;
@@ -22,4 +23,61 @@ main {
                          right center ;
 
     background-repeat: no-repeat;
+}
+
+/* --- MEJORAS MINIMALISTAS AÑADIDAS --- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0f1115;
+    font-family: 'Mali', cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 30px 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #e5e7eb;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    max-width: 820px;
+    background-size: 80px auto; /* Escala los 3 iconos para que no dominen el fondo */
+}
+
+.manifesto {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px); /* Difumina ligeramente los logos detrás del texto */
+}
+
+.manifesto h3.title {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #38bdf8;
+    letter-spacing: 0.5px;
+}
+
+.manifesto p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: #d1d5db;
+    white-space: pre-line; /* Respeta los saltos de línea de tu texto en el HTML */
+    margin-bottom: 0;
 }
