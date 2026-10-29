@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------- */
+/* Ejercicio 4 A)*/
+body {
+  background: linear-gradient(to top, #3498db, #8e44ad);
+}
+
+/* ------------------------------------------- */
+
+/* Ejercicio 4 B)*/
+.shady7 {
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  background: linear-gradient( to right,red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  color: grey; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.shady8-conic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+
+  background: conic-gradient(
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    black
+  );
+}
+
+/* ------------------------------------------- */
+
+p {
+    text-shadow: 3px 6px 1px gray;
+}
+article {
+    margin: 20px;
+}
+div {
+    margin: 20px;
+    padding: 15px;
+}
+.shady {
+    box-shadow: 5px 5px 5px 1px #00FF00;
+    width: 500px;
+}
+.shady2 {
+    box-shadow: -5px -5px 0px 0px #FF4500;
+    width: 500px;
+}
+.shady3 {
+    box-shadow: 5px 0px 0px 0px #1E90FF;
+    width: 500px;
+}
+.shady4 {
+    color: rgb(240, 46, 170);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    width: 130px;
+    height: 130px;
+    box-shadow: 5px 5px 1px 0px rgba(240, 46, 169, 0.5), 
+                10px 10px 1px 0px rgba(216, 115, 181, 0.5),
+                15px 15px 1px 0px rgba(221, 143, 193, 0.5),
+                20px 20px 1px 0px rgba(218, 184, 204, 0.5),
+                25px 25px 1px 0px rgba(226, 194, 214, 0.5);
+}
+.shady5 {
+    width: 130px;
+    height: 130px;
+    margin-top: 70px;
+    box-shadow: 0px 0px 1px 3px rgb(85, 91, 255),
+                0px 0px 1px 6px rgb(31, 193, 27),
+                0px 0px 1px 9px rgb(255, 217, 19),
+                0px 0px 1px 12px rgb(255, 156, 85),
+                0px 0px 1px 15px rgb(255, 85, 85);
+}
+
+.shady6 {
+    width: 130px;
+    height: 130px;
+    margin-top: 90px;
+    box-shadow: 0px 0px 1px 3px rgb(85, 91, 255),
+                15px -15px 0px -1px rgb(255, 255, 255),
+                15px -15px 0px 3px rgb(31, 193, 27),
+                30px -30px 0px -1px rgb(255, 255, 255),
+                30px -30px 0px 3px rgb(255, 217, 19),
+                45px -45px 0px -1px rgb(255, 255, 255),
+                45px -45px 0px 3px rgb(255, 156, 85),
+                60px -60px 0px -1px rgb(255, 255, 255),
+                60px -60px 0px 3px rgb(255, 85, 85);
+}

@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.caja {
+    padding: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 8px 8px 20px 0px black;
+}
+.img {
+    border-radius: 50%;
+    position: relative;
+    width: 70%;
+    top: 5%;
+    /* Este borde lo he añadido yo, para que no quede tan cutre */
+    border: 2px solid #23015B;
+}
+.textoCentro {
+    position: relative;
+    top: 10%;
+}
+.boton {
+    position: relative;
+    top: 20%;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    /* He mirado lo de 420deg, en geminis, para que quede la esquina con ese angulo que está en la imagen */
+    background: linear-gradient(420deg, #23015B 80%, #ded3ee);
+    padding: 20px;
+}

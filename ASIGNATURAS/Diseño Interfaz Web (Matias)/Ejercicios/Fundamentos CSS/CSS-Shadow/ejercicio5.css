@@ -1,0 +1,28 @@
+
+.boton1 {
+    background: linear-gradient(to right, rgb(185, 6, 6) 30%, rgb(233, 80, 80));
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 0px black;
+    text-shadow: 3px 3px 4px black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boton2 {
+    background: linear-gradient(to right, rgb(233, 134, 41) 20%, rgb(224, 155, 90));
+    width: 90px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton2:hover {
+    background: linear-gradient(to right, rgb(252, 126, 9) 20%, rgb(245, 166, 93));
+    box-shadow: 7px 7px 50px 3px rgb(230, 140, 7);
+    text-shadow: 5px 5px 10px rgb(255, 0, 0);
+    font-size: 1.1em;
+}
