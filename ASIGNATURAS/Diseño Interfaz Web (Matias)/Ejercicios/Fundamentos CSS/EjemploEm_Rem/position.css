@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 1px solid black;
+    width: 430px;
+    height: 352px;
+    margin: 10px;
+}
+.primero {
+    background-color: aqua;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+}
+.segundo {
+    background-color: blueviolet;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: relative;
+    left: 50px;
+}
+.tercero {
+    background-color: crimson;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: absolute;
+    left: 50px;
+}
+.cuarto {
+    background-color: darksalmon;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+.quinto {
+    background-color: darkseagreen;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: sticky;
+    left: 10px;
+    top: 10px;
+}

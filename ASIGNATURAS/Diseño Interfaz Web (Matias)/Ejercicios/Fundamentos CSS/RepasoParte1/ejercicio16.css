@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-left: 1.1em;
+}
+.sticky-menu {
+    background-color: #254848;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+.menu-element {
+    width: 150px;
+    margin: 10px;
+}
+.footer {
+    background-color: #254848;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+}
+nav div, footer div {
+    display: inline;
+    padding: 15px;
+}
+nav a, footer a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+nav a:hover, footer a:hover {
+    font-size: 1.1em;
+}
+.banner {
+    background-color: #A3D2E6;
+    width: 70%;
+    margin: 20px auto;
+}
+.logo {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+.logo1 {
+    position: relative;
+    left: 40px;
+    top: 70px;
+    background-color: #536B34;
+    z-index: 1;
+}
+.logo2 {
+    position: relative;
+    bottom: 50px;
+    left: 62px;
+    background-color: #FF8500;
+}
+.content {
+    background-color: #E78E72;
+    height: 600px;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin-top: 20px;
+}
+.centered {
+    background-color: #8DE78D;
+    width: 50%;
+    height: 20%;
+    position: relative;
+    left: 25%;
+    top: 40%;
+    text-align: center;
+    padding: 50px;
+}

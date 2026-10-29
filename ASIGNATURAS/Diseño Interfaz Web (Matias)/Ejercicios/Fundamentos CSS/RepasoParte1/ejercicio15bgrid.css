@@ -1,0 +1,35 @@
+.verde {
+    background-color: green;
+    grid-area: verde;
+}
+.amarillo {
+    background-color: yellow;
+    grid-area: amarillo;
+}
+.rojo {
+    background-color: red;
+    grid-area: rojo;
+}
+.rojo2 {
+    background-color: red;
+    grid-area: rojo2;
+}
+.rojo3 {
+    background-color: red;
+    grid-area: rojo3;
+}
+.azul {
+    background-color: blue;
+    grid-area: azul;
+}
+.container {
+    display: grid;
+    border: 1px solid black;
+    height: 900px;
+    max-width: 1200px;
+    gap: 7px;
+    grid-template-areas: 
+        "verde verde verde verde"
+        "amarillo rojo rojo2 rojo3"
+        "amarillo azul azul azul";
+}

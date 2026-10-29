@@ -1,4 +1,7 @@
-/* Estilos generales y centrado del título */
+
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -8,22 +11,19 @@ h1 {
     text-align: center;
 }
 
-/* Contenedor principal con borde y esquinas redondeadas */
 .container {
     border: 1px solid #777;
     border-radius: 8px;
     padding: 15px;
-    max-width: 750px;
+    width: 50%;
     margin: 0 auto;
-    overflow: hidden; /* Limpia los flotados internos */
+    overflow: hidden;
 }
 
-/* Ajuste de tamaño base de las imágenes */
 .container img {
     height: auto;
 }
 
-/* 1. Imagen HTML5 (1ª imagen): Flotada a la derecha */
 .container img:nth-of-type(1) {
     float: right;
     width: 140px;
@@ -31,7 +31,6 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* 2. Imagen JS (2ª imagen): Flotada a la izquierda */
 .container img:nth-of-type(2) {
     float: left;
     width: 110px;
@@ -39,7 +38,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* 3. Imagen CSS3 (3ª imagen): Flotada a la izquierda */
 .container img:nth-of-type(3) {
     float: left;
     width: 110px;
@@ -47,7 +45,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* 4. Último párrafo: Rompe los flotados anteriores para colocarse abajo del todo */
 .container p:last-child {
     clear: both;
 }
