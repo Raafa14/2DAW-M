@@ -18,7 +18,9 @@ body {
   width: 500px;
   height: 60px;
   text-align: center;
-  background: linear-gradient( to right,red,
+  background: linear-gradient( 
+    to right,
+    red,
     orange,
     yellow,
     green,
@@ -78,11 +80,11 @@ div {
     font-size: 2em;
     width: 130px;
     height: 130px;
-    box-shadow: 5px 5px 1px 0px rgba(240, 46, 169, 0.5), 
+    box-shadow: 5px 5px 1px 0px rgba(240, 46, 169, 0.6), 
                 10px 10px 1px 0px rgba(216, 115, 181, 0.5),
-                15px 15px 1px 0px rgba(221, 143, 193, 0.5),
-                20px 20px 1px 0px rgba(218, 184, 204, 0.5),
-                25px 25px 1px 0px rgba(226, 194, 214, 0.5);
+                15px 15px 1px 0px rgba(221, 143, 193, 0.4),
+                20px 20px 1px 0px rgba(218, 184, 204, 0.3),
+                25px 25px 1px 0px rgba(226, 194, 214, 0.2);
 }
 .shady5 {
     width: 130px;
