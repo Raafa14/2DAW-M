@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 0.1px;
+}
+
+header {
+    background-color: yellow;
+    height: 150px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.red {
+    background-color: red;
+    height: 150px;
+}
+
+.blue {
+    background-color: blue;
+    height: 150px;
+}
+
+.green {
+    background-color: green;
+    height: 150px;
+}
+
+@media screen and (min-width: 576px) {
+    header {
+        background-color: #FFA500;
+    }
+    .red {
+        float: left;
+        width: 50%;
+    }
+    .blue {
+        float: right;
+        width: 50%;
+    }
+    .green {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 992px){
+    header {
+        background-color: #FFA500;
+    }
+    .red, .blue, .green {
+        float: left;
+        width: calc(100%/3);
+    }
+}

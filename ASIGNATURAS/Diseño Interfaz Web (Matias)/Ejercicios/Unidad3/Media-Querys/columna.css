@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+article {
+    height: 300px;
+}
+.red {
+    background-color: red;
+    width: 15%;
+    float: left;
+}
+.blue {
+    background-color: blue;
+    width: 55%;
+    float: left;
+}
+.yellow {
+    background-color: yellow;
+    width: 30%;
+    float: left;
+}
+
+@media screen and (max-width: 992px) {
+.red {
+    width: 50%;
+    float: left;
+}
+.blue {
+    width: 50%;
+    float: right;
+}
+.yellow {
+    clear: both;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 576px) {
+.red {
+    width: 100%;
+}
+.blue {
+    width: 100%;
+}
+.yellow {
+    width: 100%;
+}
+}
