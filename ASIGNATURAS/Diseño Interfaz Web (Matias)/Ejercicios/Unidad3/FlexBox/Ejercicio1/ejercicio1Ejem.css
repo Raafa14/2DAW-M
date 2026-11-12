@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item1 {
+    background-color: aqua;
+}
+.item2 {
+    background-color: rgb(161, 109, 211);
+    /* align-self: flex-end; */
+}
+.item3 {
+    background-color: brown;
+    /* font-size: 3rem; */
+    /* margin-left: auto; */
+}
+.item4 {
+    background-color: coral;
+    /* align-self: flex-end; */
+}
+.item5 {
+    background-color: rgb(167, 148, 72);
+    /* font-size: 5rem; */
+    /* flex-grow: 2 !important; */
+}
+
+.container {
+    border: 2px solid black;
+    height: 675px;
+    margin: 50px;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    /* align-content: flex-start; */
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    line-height: 80px;
+    text-align: center;
+
+    /* flex-grow: 1; */
+    /* flex: 1 1 100px; */
+}
+
+/*Jerarquia de tamaño en css CON FLEX*/
+/* flex-basis < max-content < width < max-width < min-width*/

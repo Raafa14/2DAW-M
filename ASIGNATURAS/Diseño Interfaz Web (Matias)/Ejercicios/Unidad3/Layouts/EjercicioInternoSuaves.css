@@ -1,0 +1,100 @@
+/* Corregido: selector universal * en lugar de - */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Necesario para que el contenedor absoluto del botón abarque el alto total de la página */
+body {
+    position: relative;
+}
+
+/* 1. Header fijo */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f3b57;
+    text-align: right;
+    z-index: 1000;
+}
+
+.nav__lista {
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__enlace {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 24px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease; /* Suaviza también el hover */
+}
+
+.nav__enlace:hover {
+    background: #fff;
+    color: #1f3b57;
+}
+
+/* 2. Secciones a pantalla completa con fondo fijo (Efecto Parallax) */
+.seccion {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*Importante*/
+    display: table;
+}
+
+.seccion__contenido {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.seccion--primera {
+    background-image: url("fondo1.jpg");
+}
+
+.seccion--segunda {
+    background-image: 
+        linear-gradient(to bottom, transparent 50%, rgba(138, 43, 226, 0.8) 100%),
+        url("fondo2.jpg");
+}
+
+.seccion--contacto {
+    background: linear-gradient(135deg, #7b2cbf, #ff5e36);
+    background-attachment: fixed; /* Mantiene el degradado fijo igual que las fotos */
+}
+
+/* 3. Textos */
+.tagline {
+    color: #fff;
+    font-size: 44px;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.seccion--contacto h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.seccion--contacto p {
+    color: #fff;
+    font-size: 20px;
+}
