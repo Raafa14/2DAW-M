@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('sung.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00d2ff;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.box-sombras {
+    align-self: flex-end;
+}
+
+.box-centro {
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .box-sombras {
+        align-self: center;
+    }
+}
