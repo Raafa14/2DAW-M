@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgba(162, 84, 207, 0.671) 20%, rgba(226, 223, 64, 0.63) 80%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: flex;
+    margin: 50px;
+    gap: 35px;
+    background-color: mid;
+    background: linear-gradient(to bottom, white 50%,  rgb(89, 89, 184) 50%);
+    padding: 50px;
+    min-height: 85vh;
+    width: 90%;
+    justify-content: space-evenly;
+    border: 2px solid grey;
+}
+.caja {
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 15px;
+    height: 400px;
+    width: 300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.content {
+    align-self: center;
+}
+.cajas__caja1, .cajas__caja3 {
+    background-color: white;
+}
+.cajas__content--caracteristicas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: grey;
+    font-weight: 600;
+}
+.cajas__content--caracteristicas2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-weight: 600;
+}
+.cajas__content--persona {
+    color: grey;
+    font-weight: 600;
+}
+.cajas__content--persona2 {
+    color: white;
+    font-weight: 600;
+}
+.cajas__caja2 {
+    color: white !important;
+    background-color: #4169E1;
+}
+.cajas__content--plan {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.cajas__content--precio {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+.cajas__content--boton {
+    background-color: rgb(89, 89, 184);
+    color: white;
+}
+.cajas__content--boton2 {
+    color: grey;
+}
+.cajas__content--boton, .cajas__content--boton2 {
+    border: 0px solid;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        justify-content: center;
+        flex-wrap: wrap;
+        background: linear-gradient(to bottom, white 100%);
+    }
+    .caja {
+        flex-basis: 45%;
+        gap: 25px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .caja {
+        flex-basis: 90%;
+    }
+}
