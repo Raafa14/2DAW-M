@@ -103,7 +103,7 @@ margin-left: 15px;
     }
     .container-main {
         flex-direction: row-reverse;
-        align-items: flex-start; 
+        align-items: flex-start; /*Con esto pierde el relleno y se queda solamente la caja */
         height: 550px;      
     }
     .container-servicios {
