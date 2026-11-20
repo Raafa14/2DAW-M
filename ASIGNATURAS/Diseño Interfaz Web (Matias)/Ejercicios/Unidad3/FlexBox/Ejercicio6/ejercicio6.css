@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, rgba(202, 66, 233, 0.544) 20%, rgba(213, 159, 51, 0.593) 80%),
+    url("sung.jpeg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    min-height: 100vh;
+    margin-top: 30px;
+}
+.contact{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 40vh;
+    background: linear-gradient(to bottom, white 50%, grey 120%);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.contact__legend {
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact__name--phone-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact__field {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.contact__send {
+    align-self: center;
+    width: 100%;
+    display: flex;
+}
+.contact__btn {
+    flex: 1;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(34, 121, 228) 10%, rgb(165, 37, 224) 90%);
+    border: 0px solid;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.contact__input {
+    flex: 1;
+    align-self: flex-start;
+    padding: 10px;
+}
+.contact__textarea {
+    height: 50px;
+    flex: 1;
+}
+.contact__label {
+    width: 80px;
+    align-self: center;
+}
+
+@media screen and (min-width: 769px) {
+    .contact__name--phone-container {
+        flex-direction: row;
+    }
+    .contact__field {
+        flex-basis: 50%;
+    }
+    .contact__legend {
+        font-size: 1.5rem;
+    }
+    .contact__send {
+        align-self: flex-end;
+        width: 15%;
+    }
+}
