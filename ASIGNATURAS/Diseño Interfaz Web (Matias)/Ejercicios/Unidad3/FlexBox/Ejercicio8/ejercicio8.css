@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+}
+
+/* Clases Reutilizables */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+p, h1, h2, h3 {
+    line-height: 1.6;
+}
+
+/* ------------------------------------- */
+
+/* Tamaño imagen */
+.img {
+    width: 100%;
+    max-width: 24rem;
+    display: block;
+}
+.hero {
+    flex: 1;
+}
+/* Ponemos a todos esos flex que nos hace falta */
+.header, .header__container, .header__hero, .nav, .section__about, .about__us {
+    display: flex;
+}
+
+.hero__logo {
+    flex: 1;
+}
+.hero__text{
+    flex: 1;
+}
+
+/* Header en orden */
+.header {
+    flex-direction: column;
+}
+
+.header__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav {
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav__item {
+    text-decoration: none;
+}
+
+.header__hero {
+    flex-direction: column;
+    align-items: center;
+}
+/* ----------------------------- */
+.hero__logo {
+    margin-bottom: 20px;
+}
+
+.section__about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+.about__us {
+    flex-direction: column;
+    gap: 20px;
+}
