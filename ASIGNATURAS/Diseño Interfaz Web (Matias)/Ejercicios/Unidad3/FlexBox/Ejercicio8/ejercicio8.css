@@ -31,9 +31,7 @@
 :root {
     --gradient1: linear-gradient(150deg, #e11d48 5%, #3b5bfd 90%);
 }
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
+/* ------------------------------------- */
 /* Clases Reutilizables */
 .container {
     width: 90%;
@@ -42,6 +40,9 @@ body {
 }
 /* ------------------------------------- */
 /* Estilos generales */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
 p, h1, h2, h3 {
     line-height: 1.6;
 }
@@ -68,6 +69,7 @@ h3 {
     max-width: 24rem;
     display: block;
 }
+/* ------------------------------------- */
 .hero {
     flex: 1;
 }
