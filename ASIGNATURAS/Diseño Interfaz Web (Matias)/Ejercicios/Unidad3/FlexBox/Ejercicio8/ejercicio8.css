@@ -4,22 +4,62 @@
     box-sizing: border-box;
 }
 
-/* Estilos generales */
-
-/* Variables */
-:root {
+/* Fuente Regular (peso normal: 400) */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* Fuente Bold (negrita: 700) */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Fuente ExtraBold (extra negrita: 800) */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+/* Variables */
+:root {
+    --gradient1: linear-gradient(150deg, #e11d48 5%, #3b5bfd 90%);
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
 /* Clases Reutilizables */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
+/* ------------------------------------- */
+/* Estilos generales */
 p, h1, h2, h3 {
     line-height: 1.6;
 }
-
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
 /* ------------------------------------- */
 
 /* Tamaño imagen */
@@ -32,20 +72,41 @@ p, h1, h2, h3 {
     flex: 1;
 }
 /* Ponemos a todos esos flex que nos hace falta */
-.header, .header__container, .header__hero, .nav, .section__about, .about__us {
+.header, .header__container, .header__hero, .nav, .section__about, .about__us, .hero__text {
     display: flex;
-}
-
-.hero__logo {
-    flex: 1;
-}
-.hero__text{
-    flex: 1;
 }
 
 /* Header en orden */
 .header {
     flex-direction: column;
+    background: var(--gradient1);
+}
+.fa-code {
+    color: white;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff1f342;
+}
+.hero__logo {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.hero__text{
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.hero__title {
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    padding: 7px;
+    width: 300px;
+    text-align: center;
+    border-radius: 35px;
+    background-color: #fff1f342;
 }
 
 .header__container {
@@ -64,16 +125,31 @@ p, h1, h2, h3 {
 
 .nav__item {
     text-decoration: none;
+    font-weight:700;
 }
 
 .header__hero {
     flex-direction: column;
     align-items: center;
+    margin: 15px;
+    margin-bottom: 50px;
+}
+.header__text {
+    color: white;
+}
+.hero__link {
+    border: 0px solid;
+    background-color:  #fff1f3;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #3b5bfd;
+    font-weight: 600;
 }
 /* ----------------------------- */
-.hero__logo {
-    margin-bottom: 20px;
-}
 
 .section__about {
     flex-direction: column;
